@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculetor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="continer">
+      <div class="calculetor">
+        <form>
+          <div class="dispaly">
+            <input
+              type="text"
+              name="display"
+              id="input-output"
+              readonly
+              placeholder="0"
+            />
+          </div>
+          <div>
+            <input type="button" onclick="alClear()" value="AC" />
+            <input type="button" onclick="deleteNumber()" value="DEL" />
+            <input type="button" onclick="inputNumber('%')" value="%" />
+            <input type="button" onclick="inputNumber('/')" value="/" />
+          </div>
+          <div>
+            <input type="button" onclick="inputNumber('7')" value="7" />
+            <input type="button" onclick="inputNumber('8')" value="8" />
+            <input type="button" onclick="inputNumber('9')" value="9" />
+            <input type="button" onclick="inputNumber('*')" value="*" />
+          </div>
+          <div>
+            <input type="button" onclick="inputNumber('4')" value="4" />
+            <input type="button" onclick="inputNumber('5')" value="5" />
+            <input type="button" onclick="inputNumber('6')" value="6" />
+            <input type="button" onclick="inputNumber('-')" value="-" />
+          </div>
+          <div>
+            <input type="button" onclick="inputNumber('1')" value="1" />
+            <input type="button" onclick="inputNumber('2')" value="2" />
+            <input type="button" onclick="inputNumber('3')" value="3" />
+            <input type="button" onclick="inputNumber('+')" value="+" />
+          </div>
+          <div>
+            <input type="button" onclick="inputNumber('00')" value="00" />
+            <input type="button" onclick="inputNumber('0')" value="0" />
+            <input type="button" onclick="inputNumber('.')" value="." />
+            <input type="button" onclick="showResult()" value="=" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ---------scripts------------------ -->
+    <script src="main.js"></script>
+  </body>
+</html>
